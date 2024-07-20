@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Flutuantes na prática</title>
+    <style type="text/css">
+        body {
+            background: #f4f4f4;
+        }
+
+        #principal {
+            width: 69%;
+            margin: 10px auto;
+        }
+
+        .noticia {
+            background-color: #e5e5e5;
+            padding: 5px;
+            margin: 7px;
+            width: 280px;
+            float: left;
+        }
+
+        .imagem-galeria {
+            background: white;
+            width: 265px;
+            padding: 5px;
+            margin: 15px;
+            float: left;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="principal"> <!-- Inicio princiol -->
+        <div> <!-- Inicio noticias -->
+            <div class="noticia">
+                <h2>Botafogo Campeão 2024!</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident voluptas sit quasi et totam iure
+                    earum rerum consectetur quia non tempore molestias omnis amet rem, magni doloribus neque dolorem
+                    facere!
+                </p>
+                <a href="#">Veja mais</a>
+            </div>
+            <div class="noticia">
+                <h2>Fluminence é rebaixado</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident voluptas sit quasi et totam iure
+                    earum rerum consectetur quia non tempore molestias omnis amet rem, magni doloribus neque dolorem
+                    facere!
+                </p>
+                <a href="#">Veja mais</a>
+            </div>
+            <div class="noticia">
+                <h2>Vasco contrata Coutinho</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident voluptas sit quasi et totam iure
+                    earum rerum consectetur quia non tempore molestias omnis amet rem, magni doloribus neque dolorem
+                    facere!
+                </p>
+                <a href="#">Veja mais</a>
+            </div>
+        </div><!-- fim principal -->
+        <div class="clear"></div>
+        <div> <!-- Inicio da galeria -->
+            <div class="imagem-galeria">
+                <img src="imagens/imagem1.png" alt="soldado">
+                <p>Resumo</p>
+            </div>
+            <div class="imagem-galeria">
+                <img src="imagens/imagem2.png" alt="soldado">
+                <p>Resumo</p>
+            </div>
+            <div class="imagem-galeria">
+                <img src="imagens/imagem3.png" alt="soldado">
+                <p>Resumo</p>
+            </div>
+            <div class="imagem-galeria">
+                <img src="imagens/imagem4.png" alt="soldado">
+                <p>Resumo</p>
+            </div>
+            <div class="imagem-galeria">
+                <img src="imagens/imagem5.png" alt="soldado">
+                <p>Resumo</p>
+            </div>
+        </div><!-- fim galeria -->
+    </div><!-- fim principal -->
+</body>
+
+</html>

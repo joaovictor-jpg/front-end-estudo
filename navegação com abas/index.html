@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação com abas</title>
+    <style type="text/css">
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 720px;
+        }
+        ul li {
+            float: left;
+            background: url(imagens/aba-direita.png) no-repeat top right;
+        }
+        ul a {
+            display: block;
+            padding: 0 2em;
+            line-height: 3em;
+            text-decoration: none;
+            background: url(imagens/aba-esquerda.png) no-repeat top left;
+            color: #fff;
+        }
+        ul a:hover {
+            color: #894a1f;
+        }
+
+        ul #atual {
+            background: url(imagens/aba-direita-atual.png) no-repeat top right;
+        }
+        ul #atual a {
+            background: url(imagens/aba-esquerda-atual.png) no-repeat top left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Home</h1>
+    <ul>
+        <li id="atual"><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Notícias</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+</body>
+</html>
