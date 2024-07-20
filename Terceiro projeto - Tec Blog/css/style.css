@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font: 16px 'Trebuchet MS', 'Helvetica', sans-serif;
+    background-color: #e6e6e6;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 200;
+}
+
+/* inicio header */
+#header {
+    background-color: #f7b600;
+    padding: 15px;
+    text-align: center;;
+}
+#header h1 {
+    color: #4e4e4e;
+    font-size: 2.5em;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+#header h1 strong {
+    color: white;
+}
+#header a:link, #header a:visited {
+    color: #fff;
+    padding: 8px 12px;
+    margin-bottom: 20px;
+}
+#header a:hover {
+    color: #f7b600;
+    background-color: #fff;
+}
+/* fim header */
+
+/* inicio do corpo */
+#conteudo {
+    width: 90%;
+    margin: 0px auto;
+    padding: 15px;
+}
+/* post lateral */
+#post-lateral {
+    float: right;
+    width: 30%;
+}
+
+.recentes {
+    padding: 2%;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+.recentes h2 {
+    color: #565656;
+    background-color: #ccc;
+    padding: 5px;
+    margin-bottom: 2px;
+}
+.recentes a {
+    color: #f7b600;
+    display: block;
+}
+/* fim post lateral */
+/* post principal */
+#post-principal {
+    float: left;
+    width: 60%;
+}
+.materia {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+.materia h2 {
+    color: #f7b600;
+}
+.materia .data {
+    font-size: 0.8em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.materia a {
+    color: #f7b600;
+}
+/* fim post principal */
+/* footer */
+.footer {
+    clear: both;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #ccc;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor</title>
+    <style type="text/css">
+        * {
+            border: 1px solid red;
+        }
+
+        h1 {
+            color: green;
+        }
+
+        /*.verde {
+            color: green;
+        }*/
+        p.verde {
+            color: green;
+        }
+
+        #cabecalho {
+            border: 1px solid blue;
+        }
+
+        li>a {
+            color: red;
+            text-decoration: none;
+        }
+        p a {
+            color: green;
+        }
+        h1+p {
+            color: red;
+        }
+        h1~p {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cabecalho">
+        <h1>
+            Título da página
+        </h1>
+        <p>teste 1</p>
+        <p>
+            teste 2
+        </p>
+    </div>
+    <p>
+        Parágrafo 1 da página
+    </p>
+    <span class="verde">teste</span>
+    <p class="verde">teste</p>
+    <ul>
+        <li>
+            <a href="#">Teste 1</a>
+        </li>
+        <li><a href="#">Teste 2</a></li>
+    </ul>
+    <a href="#">Teste 3</a>
+    <p>
+        <span><a href="#">Teste 4</a></span>
+        <a href="#">Teste 4</a>
+    </p>
+</body>
+
+</html>
