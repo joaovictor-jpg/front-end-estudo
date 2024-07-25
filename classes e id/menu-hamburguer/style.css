@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('style/header.css');
+
+:root {
+    --cor-fundo: #131A35;
+    --cor-branca: #FFFFFF;
+    --cor-menu: #1B2341;
+    --cor-borda: #0156FF;
+
+    --font-padrao: "Saira", sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: var(--font-padrao);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-branca);
+}
