@@ -14,11 +14,8 @@ const alarme = new Audio('sons/beep.mp3');
 const botaoStartPause = document.querySelector('#start-pause span');
 const imgIniciarOuPausar = document.querySelector('.app__card-primary-butto-icon');
 const tempoNaTela = document.querySelector('#timer');
-const temporizadorFocoTreino = 1500;
-const temporizadorDescansoCurtoTreino = 300;
-const temporizadorDescansoLongoTreino = 900;
 
-let contador = 1500;
+let contador = 30;
 let segundos = null;
 
 musicaFoco.loop = true;
@@ -32,7 +29,7 @@ musicaFocoInput.addEventListener('change', () => {
 })
 
 focusBtTreino.addEventListener('click', () => {
-    contador = 1500;
+    contador = 30;
     alterarContexto('foco');
     focusBtTreino.classList.add('active');
 })
@@ -72,10 +69,15 @@ function alterarContexto(contexto) {
 }
 
 const calculoDoTempo = () => {
-    if(contador <= 0) {
+    if (contador <= 0) {
         fimContagem();
         alarme.play();
         alarme.volume = 0.3;
+        const focoAtivo = htmlTreino.getAttribute('data-contexto') == 'foco';
+        if (focoAtivo) {
+            const evento = new CustomEvent('focoFinalizado');
+            document.dispatchEvent(evento);
+        }
         return;
     }
     contador--;
@@ -86,7 +88,7 @@ const calculoDoTempo = () => {
 botaoStartPause.addEventListener('click', iniciarOuPausarContagem);
 
 function iniciarOuPausarContagem() {
-    if(segundos) {
+    if (segundos) {
         fimContagem();
         musicaPause.play();
         musicaPause.volume = 0.3;
@@ -108,7 +110,7 @@ function fimContagem() {
 
 function exibirTempoNatela() {
     const tempoDate = new Date(contador * 1000);
-    const dateFormat = tempoDate.toLocaleTimeString('pt-br', {minute: '2-digit', second: '2-digit'})
+    const dateFormat = tempoDate.toLocaleTimeString('pt-br', { minute: '2-digit', second: '2-digit' })
     tempoNaTela.innerHTML = `${dateFormat}`;
 }
 
